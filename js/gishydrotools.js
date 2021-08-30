@@ -602,7 +602,7 @@ function basin_properties(){
         basin2_modal +=             btable6_html
         basin2_modal +=             '<p align="center"><b>SSURGO Soils Data Statistics Percent (used in Regression Equations)</b></p>';
         basin2_modal +=             btable7_html
-        basin2_modal +=             '<div align="center"><p style="color:red;width: 400px;text-align: center;" ><b>' + html_warning + '</b></p></div>'
+        basin2_modal +=             '<div align="center"><p style="color:#B21E28;width: 400px;text-align: center;" ><b>' + html_warning + '</b></p></div>'
         basin2_modal +=         '</div>';
         basin2_modal +=         '<div class="modal-footer" style="justify-content: space-between;">';
         basin2_modal +=             '<button type="button" class="btn btn-default" onclick=modaltotxt(basin_stat,"' + full_project_name + '_STATS.csv")>Download</button>'
@@ -849,7 +849,7 @@ function tasker_basin(){
             basin3_modal +=             btable12_html
             basin3_modal +=             '<p align="center"><b>Hydrologic Region Prediction Intervals</b></p>';
             basin3_modal +=             btable13_html
-            basin3_modal +=             '<p align="center" style="color:red;">'
+            basin3_modal +=             '<p align="center" style="color:#B21E28;">'
             for(var i=0; i < warning_message.length; i++){
                 basin3_modal += '<b>' + warning_message[i] + '</b><br/>';
             }
@@ -1026,7 +1026,7 @@ function outlets_marker(){
                 $('#clearoutlet-button').removeAttr('disabled');
                 alertmodal("Valid",'The outlet point selected is <span style="color:green;"><b>VALID</b></span>.',"10vh")
             }else{
-                alertmodal("Invalid", 'The outlet point selected is <span style="color:red;"><b>INVALID</b></span>. Please place the outlet point on a valid stream.',"15vh")
+                alertmodal("Invalid", 'The outlet point selected is <span style="color:#B21E28;"><b>INVALID</b></span>. Please place the outlet point on a valid stream.',"15vh")
             }
         }
         drawLayers.clearLayers();
@@ -1741,7 +1741,7 @@ function resplot_modal(){
                     },
                 },
                 vAxis: {title: 'Flow-Storage [ft]'},
-                colors: ['#0000FF', '#FF0000']
+                colors: ['#0000FF', '#B21E28']
             };
             var chart = new google.visualization.LineChart(document.getElementById('chart_div_res'));
 
@@ -2037,7 +2037,7 @@ function tasker_calculator(){
         tasker1_html += '</table><p></p>';
 
         var tasker3_html = '<table border="0" align="center">';
-        tasker3_html += '<col width="100">';
+        tasker3_html += '<col width="150">';
         tasker3_html += '<col width="300">';
         for(var i=0; i < estim_par[0].length; i++){
             tasker3_html += '<tr>';
@@ -2131,7 +2131,7 @@ function tasker_calculator(){
         taskercalc_modal +=             tasker4_html
         taskercalc_modal +=             '<p align="center"><b>Prediction Intervals</b></p>';
         taskercalc_modal +=             tasker5_html
-        taskercalc_modal +=             '<p align="center" style="color:red;">'
+        taskercalc_modal +=             '<p align="center" style="color:#B21E28;">'
         for(var i=0; i < warning_message.length; i++){
             taskercalc_modal += '<b>' + warning_message[i] + '</b><br/>';
         }
