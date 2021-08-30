@@ -63,8 +63,8 @@
         color: #000;
         background-color: #eee; }
       .leaflet-sidebar-tabs > li.active, .leaflet-sidebar-tabs > ul > li.active {
-        color: #fff;
-        background-color: #0074d9; }
+        color: #F7A800;
+        background-color: #000; }
       .leaflet-sidebar-tabs > li.disabled, .leaflet-sidebar-tabs > ul > li.disabled {
         color: rgba(51, 51, 51, 0.4); }
         .leaflet-sidebar-tabs > li.disabled:hover, .leaflet-sidebar-tabs > ul > li.disabled:hover {
@@ -126,8 +126,8 @@
   padding: 0 20px;
   line-height: 40px;
   font-size: 14.4pt;
-  color: #fff;
-  background-color: #0074d9; }
+  color: #F7A800;
+  background-color: #000; }
   .leaflet-sidebar-right .leaflet-sidebar-header {
     padding-left: 40px; }
 

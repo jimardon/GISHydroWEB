@@ -97,14 +97,14 @@
                         <li>Peak discharge estimates from USGS regional regression equations (with confidence intervals and gauge calibration).</li>
                         <li>Built-in WinTR-20 model.</li>
                     </ul>
-                    <p align="center" style="color:red;font-size:16px;"><b>Tha application is in a "Beta" testing phase, things may not work as expected. Use Google Chrome browser for the best experience. Please report any bug you encounter.</b></p>
+                    <p align="center" style="color:#B21E28;font-size:16px;"><b>Tha application is in a "Beta" testing phase, things may not work as expected. Use Google Chrome browser for the best experience. Please report any bug you encounter.</b></p>
                     <p align="center" style="font-size:16px;"><b>To start go to the "Area of Interest" tab</b></p>
                     <p align="justify" style="font-size:16px;">GISHydroWEB is under continuous revision. Although we are not a web application development company and do not charge for the use of our website,
                         we do try to support it to the best of our ability. The application has a <a href="javascript:void(sidebar.open('help'));">Help</a> tab that contains some useful documentation.</p>
                     <p align="center" style="font-size:16px;"><b>Check more on the <a href="http://www.gishydro.eng.umd.edu/" rel="noopener noreferrer" target="_blank">GISHydro</a> website.</b></p>
                     <div class="inline">
-                        <img src='image/UMD.png' alt="UMD" width="100" height="100" style="float:left">
-                        <img src='image/SHA.png' alt="SHA" width="100" height="100" style="float:right">
+                        <img src='image/UMD.png' alt="UMD" height="100" style="float:left">
+                        <img src='image/SHA-LG.png' alt="SHA" height="100" style="float:right">
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                     <div class="inline">
                         <strong>Pour Point Check:</strong>
                         <strong id = "validpp" style="color:green;display: none;float:right;">Valid</strong>
-                        <strong id = "novalidpp" style="color:red;display: none;float:right;">Not Valid</strong>
+                        <strong id = "novalidpp" style="color:#B21E28;display: none;float:right;">Not Valid</strong>
                         <strong id = "selecpp" style="color:purple;float:right;">Waiting for user input</strong>
                     </div>
                     <p></p>
@@ -846,15 +846,16 @@
                 </div>
             </div>
 
-
             <!-- Tools -->
             <div class="leaflet-sidebar-pane" id="tools">
                 <h1 class="leaflet-sidebar-header">
                     Tools
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
+                <p></p>
                 <div style="width:95%;">
-                    <p align="justify" style="font-size:14px;">If the watershed size is too big then some of the layers will not show up on the map. Try reducing the AOI as much as possible.</p>
+                    <p align="justify" style="font-size:14px;">These tools will load a specific layer to the map, they will become available after Basin Properties have been calculated (except for the Longes Path layer, which will become availabe after computing the Tc values).
+                         If the watershed size is too big then some of the layers may not show up on the map.</p>
                     <!-- Create Contours Button -->
                     <div class="hr-text-bar">
                         <span class="hr-text">Create Contours</span>
@@ -877,31 +878,19 @@
                     <p></p>
                     <button id="contoursdownload-button" class="generic-grey-button" onclick=exportcontours()>Download Contours (json)</button>
                     <p></p>
-                    <!-- Load Land Use Layer -->
+                    <!-- Load Layers -->
                     <div class="hr-text-bar">
-                        <span class="hr-text">Load Land Use Layer</span>
+                        <span class="hr-text">Load Layers</span>
                     </div>
                     <button id="landuse-button" class="generic-grey-button" disabled="disabled" onclick=landuseload()>Load Land Use</button>
                     <button id="ludownload-button" class="generic-grey-button" onclick=exportlanduse()>Download Land Use (json)</button>
                     <p></p>
-                    <!-- Load Soils Layer -->
-                    <div class="hr-text-bar">
-                        <span class="hr-text">Load Hydorlogic Soils Layer</span>
-                    </div>
                     <button id="soils-button" class="generic-grey-button" disabled="disabled" onclick=soilsload()>Load Soils</button>
                     <button id="soilsdownload-button" class="generic-grey-button" onclick=exportsoils()>Download Soils (json)</button>
                     <p></p>
-                    <!-- Load Curve Number Layer -->
-                    <div class="hr-text-bar">
-                        <span class="hr-text">Load Curve Number Layer</span>
-                    </div>
                     <button id="curvenumber-button" class="generic-grey-button" disabled="disabled" onclick=curvenumberload()>Load Curve Number</button>
                     <button id="curvenumberdownload-button" class="generic-grey-button" onclick=exportcurvenumber()>Download Curve Number (json)</button>
                     <p></p>
-                    <!-- Load Longest Path Layer -->
-                    <div class="hr-text-bar">
-                        <span class="hr-text">Load Longest Path Layer</span>
-                    </div>
                     <button id="longestpath-button" class="generic-grey-button" disabled="disabled" onclick=longestpathload()>Load Longest Path</button>
                     <button id="longpathdownload-button" class="generic-grey-button" onclick=exportlongpath()>Download Longest Path (json)</button>
                     <p></p>
@@ -921,10 +910,9 @@
                         This cooperation continues to produce powerful tools to support engineering, conservation, and planning efforts within the State.</p>
                     <p></p>
                     <div class="hr-text-bar">
-                        <span class="hr-text">GISHydro Documentation</span>
+                        <span class="hr-text">Documentation</span>
                     </div>
-                    <p align="center" style="font-size:14px;">The below links have not been updated with the latest GISHydroWEB documentation. As fo now, these will redirect the user to GISHydroNXT documentation.</p>
-                    <p align="center" style="color:red">Last update: August, 2021</p>
+                    <p align="center" style="font-size:14px;">The below links have not been updated with the latest GISHydroWEB documentation. Right now, these will redirect the user to GISHydroNXT documentation.</p>
                     <p align="center">
                         <a href="http://www.gishydro.eng.umd.edu/" target="_blank" style="font-size:16px;"><b>GISHydro Website</b></a>
                     </p>
@@ -949,7 +937,13 @@
                     <p align="center">
                         <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/detailfull/null/?cid=stelprdb1042793" target="_blank" style="font-size:16px;"><b>WinTR-20 Project (v3.20)</b></a>
                     </p>
+                    <div class="hr-text-bar">
+                        <span class="hr-text">Contact</span>
+                    </div>
                     <p align="center" style="font-size:14px;">Glitches and bugs can occasionally happen. If you encounter one of these bugs, please report it to us.</p>
+                    <p align="center" style="font-size:14px;"><a href="mailto:javier.mardones@mbakerintl.com">Javier Mardones</a></p>
+                    <p></p>
+                    <p align="center" style="color:#F7A800">Last update: August, 2021</p>
                 </div>
             </div>
         </div>
@@ -1329,49 +1323,49 @@
                             <div class="inline">
                                 <strong>Sub-Area #:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmsubarea" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmsubarea" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong>Overall Travel Time [hrs]:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmtotaltime" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmtotaltime" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong>Overland Travel Time [hrs]:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmoltt" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmoltt" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong>Swale Travel Time [hrs]:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmswtt" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmswtt" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong>Channel Travel Time [hrs]:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmchtt" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmchtt" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong># Overland Segments:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmolseg" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmolseg" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong># Swale Segments:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmswseg" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmswseg" readonly>
                                 </div>
                             </div>
                             <div class="inline">
                                 <strong># Channel Segments:</strong>
                                 <div class="complete-form">
-                                    <input style="width:60%;background-color:#F2F4F4;" class="complete-input" id="vmchseg" readonly>
+                                    <input style="width:60%;background-color:#fff;" class="complete-input" id="vmchseg" readonly>
                                 </div>
                             </div>
                         </div>
