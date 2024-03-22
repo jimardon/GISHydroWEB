@@ -1,0 +1,54 @@
+{
+    "delerror": {
+        "e1x10": "Delineation Check Task: Unexpected Error.",
+        "e1x20": "Pour Point Error: Longitude and/or latitude values are out of bounds.",
+        "e1x30": "Delineation/Data Task: Unexpected Error.",
+        "e1x40": "Land Cover Error: Land use does not cover any of the watershed extent, please change land use cover or pour point.",
+        "e1x50": "User Streams Task: Unexpected Error.",
+        "e1x60": "Extent Warning: Drainage area extends outside of GISHydroWEB, layers will not cover the full extent of the drainage area."
+    },
+    "basinerror": {
+        "e2x10": "Basin Properties Task: Unexpected Error.",
+        "e2x20": "Impervious Warning: Impervious area in watershed exceeds 10%! Calculated discharges from Fixed Region Regression Equations may not be appropriate.",
+        "e2x30": "Project Size Warning: Drainage area is larger than 1 sq mi: Use a 30-meter DEM for faster results"
+    },
+    "frreerror": {
+        "e3x10": "FRRE Task: Unexpected Error",
+        "e3x20": "FRRE Calculator Task: Unexpected Error"
+    },
+    "subshederror": {
+        "e4x10": "Flow Path Task: Unexpected Error",
+        "e4x20": "Outlet Task: Unexpected Error",
+        "e4x30": "Subwatersheds Task: Unexpected Error"
+    },
+    "settocerror": {
+        "e5x10": "Time of Concentration Task: Unexpected Error"
+    },
+    "ratingerror": {
+        "e6x10": "Cross Section Task: Unexpected Error",
+        "e6x20": "Cross Section Error: Transect must be drawn into a routing reach",
+        "e6x30": "Reservoir Task: Unexpected Error",
+        "e6x40": "Reservoir Error: Reservoir must be placed into a routing subwatershed"
+    },
+    "precipitationerror": {
+        "e7x10": "Precipitation Task: Unexpected Error"
+    },
+    "tr20error": {
+        "e8x10": "WinTR-20 Task: Unexpected Error",
+        "e8x11": "Please download and check WinTR-20 error file for possible errors.",
+        "e8x12": "No errors found, please download the Output file to see the model results."
+    },
+    "layererror": {
+        "e9x10": "Contour Task: Unexpected Error",
+        "e9x20": "Land Cover Task: Unexpected Error",
+        "e9x30": "Soils Task: Unexpected Error",
+        "e9x40": "Curve Number Task: Unexpected Error",
+        "e9x50": "Longest Path Task: Unexpected Error",
+        "e9x60": "Download Layer Task: Unexpected Error"
+    },
+    "generalerror": {
+        "g1x10": "The LandUse/Land Cover data set you have selected has been provided courtesy of the Maryland Department of Planning. Any use of that data set outside of this application without the permission of the Department of Planning is prohibited. The 2010 data are based on superior imagery and a refined classification system. The 2002 and earlier Land Use/Land Cover datasets are not reconciled with these improvements. For more information on Department of Planning data, please visit the MDP web site http://www.mdp.state.md.us or call (410) 767-4500.)",
+        "g9x99": "An unexpected error has occured"
+    }
+}
+

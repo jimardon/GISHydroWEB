@@ -1,0 +1,622 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+}
+
+body a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    font-size: 14px;
+}
+
+label {
+    display: inline;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a:link {
+    color: #B21E28;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #B21E28;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F7A800;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div.container6 {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+div.container6 p {
+    margin: 0
+}
+
+#map,
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#main-description {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#bottom-contact-info {
+    width: 700px;
+    margin: auto;
+}
+
+#container {
+    width: 100%;
+    margin: 0px auto;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#display-normal {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 30px;
+    border: 4px solid #dddbdb;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+#bdate_Month_ID,
+#bdate_Day_ID,
+#edate_Month_ID,
+#edate_Day_ID,
+#bdate_Year_ID,
+#edate_Year_ID {
+    height: 30px;
+}
+
+#bdate_Month_ID option,
+#bdate_Day_ID option,
+#edate_Month_ID option,
+#edate_Day_ID option {
+    font-size: 12.5px;
+}
+
+#bdateselect-section form,
+#edateselect-section form {
+    float: right;
+}
+
+#station-name-text {
+    margin-right: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#clearpjs-button,
+#clearaoi-button {
+    width: 100%;
+    float: center;
+    display: none;
+}
+
+#help-button,
+#redoxs-button,
+#plotxs-button,
+#upload-button,
+#pjs-button,
+#clearusrstr-button,
+#usrstr-button,
+#infstr-button,
+#landuse-button,
+#longestpath-button,
+#cleardel-button,
+#pourpoint2-button,
+#soils-button,
+#clearflowpath-button,
+#clearoutlet-button,
+#storm-button,
+#contours-button,
+#curvenumber-button,
+#resetprop-button,
+#redoaoi-button,
+#resetall-button,
+#redosubshed-button,
+#redoreport-button,
+#redotc-button,
+#redorating-button,
+#clearupload-button {
+    width: 100%;
+    float: center;
+}
+
+#velmeth_tc,
+#lp_subarea,
+#tc_subarea {
+    display: none;
+}
+
+#precipitation-button,
+#applyxs-button,
+#addreservoir-button,
+#addxs-button,
+#pourpoint-button,
+#layerdownload-button,
+#upload-button,
+#aoi-button,
+#subsheds-button,
+#showpixels-button,
+#createwintr20-button,
+#email-button,
+#frrecalc-button,
+#apply-button,
+#done-button,
+#delineate-button,
+#basincomp-button,
+#tcapply-button,
+#basinstats-button,
+#basinchar-button,
+#frre-button,
+#report-button,
+#basin_properties-button,
+#subdivideyes-button,
+#subdivideno-button,
+#flowpath-button,
+#outlet-button {
+    width: 100%;
+    float: center;
+    height: 50px;
+}
+
+#tcvalue-button {
+    width: 100%;
+    float: center;
+    display: block;
+    height: 50px;
+    display: none;
+}
+
+#recalculate-button {
+    width: 40%;
+    float: right;
+}
+
+#resettc-button {
+    width: 40%;
+    float: left;
+}
+
+#data-inventory-text {
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    font-style: normal;
+    margin-right: 16px;
+}
+
+#loading-image-m_stations {
+    display: inline-block;
+}
+
+#loading-screen {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+#downloadwintr20output-button,
+#downloadwintr20input-button,
+#downloadwintr20error-button {
+    width: 100%;
+    float: center;
+    display: none;
+    height: 50px;
+}
+
+.scroll-container {
+    width: 430px;
+    height: 320px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.matches {
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.matches div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.matches div:hover {
+    background-color: #fff;
+}
+
+.checkbox-form {
+    display: block;
+    float: right;
+    width: 100%;
+}
+
+.checkbox-box {
+    float: right;
+}
+
+.complete-form {
+    width: 40%;
+    float: right;
+}
+
+.radio-form {
+    width: 20%;
+    float: right;
+}
+
+.complete-input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.selection-option {
+    margin: 15px 0px;
+}
+
+.expand-class {
+    height: 15px;
+    width: 15px;
+}
+
+.button-api-option {
+    width: 200px;
+    height: 120px;
+    background-color: #e6e9ef;
+    padding: 10px;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #cfcaca;
+}
+
+.button-api-option:hover {
+    cursor: pointer;
+}
+
+.api-and-description {
+    height: 400px;
+    margin: 0px 30px;
+    max-width: 290px;
+    padding: 0px 16px;
+    border: 3px solid #e7e7e7;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.option-details {
+    display: flex;
+}
+
+
+.dropdown-button {
+    width: 100px;
+    background-color: #000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    align-items: center;
+    font-size: 10pt;
+}
+
+.generic-grey-button {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.generic-grey-button:disabled {
+    background-color: #928787;
+    background-image: -moz-linear-gradient(top, rgb(172, 164, 164), #d4cece);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(185, 178, 178)), to(#dad3d3));
+    background-image: -webkit-linear-gradient(top, rgb(175, 166, 166), #d3cdcd);
+    background-image: -o-linear-gradient(top, rgb(179, 167, 167), #cec6c6);
+    background-image: linear-gradient(to bottom, rgb(173, 164, 164), #cac3c3);
+}
+
+.generic-grey-button:active {
+    background-color: #b3cbdf;
+    background-image: -moz-linear-gradient(top, rgb(175, 180, 224), #ebeff1);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(169, 172, 218)), to(#e8f1f7));
+    background-image: -webkit-linear-gradient(top, rgb(168, 173, 219), #edf2fa);
+    background-image: -o-linear-gradient(top, rgb(173, 181, 224), #dee4f3);
+    background-image: linear-gradient(to bottom, rgb(162, 175, 218), #e9ecf8);
+}
+
+.generic-dropdown {
+    width: 40%;
+    height: 30px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.generic-dropdown-label {
+    max-width: 150px;
+}
+
+.commentary {
+    font-size: 13px;
+    font-style: italic;
+}
+
+ul .li-alert {
+    list-style: none;
+}
+
+.li-alert::before {
+    content: "!";
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.help-parent {
+    display: inline-flex;
+    position: relative;
+}
+
+.help-text {
+    visibility: hidden;
+    font-size: 13px;
+    position: absolute;
+    width: 400px;
+    display: inline-block;
+    z-index: 3;
+    padding: 10px;
+    background-color: rgb(214, 211, 211);
+    border-radius: 10px;
+    left: 105%;
+    margin-top: -200%;
+
+}
+
+.help-text-large {
+    visibility: hidden;
+    font-size: 13px;
+    position: absolute;
+    width: 400px;
+    display: inline-block;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgb(214, 211, 211);
+    border-radius: 10px;
+    left: 105%;
+    margin-top: -800%;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.help-parent:hover .help-text {
+    visibility: visible;
+}
+
+.help-parent:hover .help-text-large {
+    visibility: visible;
+}
+
+.help-image {
+    width: 17px;
+    height: 17px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.station-text-clear-button {
+    position: absolute;
+    right: -30px;
+    font-size: 23px;
+    top: -3px;
+}
+
+.calendar-image {
+    position: absolute;
+    right: -13px;
+    font-size: 13px;
+    width: 20px;
+    top: 6px;
+}
+
+.station-text-clear-button:hover {
+    cursor: pointer;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.center-container {
+    margin: auto;
+    width: 50%;
+}
+
+.righttext {
+    text-align: right;
+}
+
+.lefttext {
+    text-align: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+
+.hr-text-bar {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1.5px solid #F7A800;
+    text-align: center;
+    padding-top: 6px;
+    margin-bottom: 30px;
+}
+
+.hr-text {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(253, 253, 254);
+    padding: 0 10px;
+}
+
+.modal.show {
+    z-index: 100000 !important;
+}
+
+.modal-title {
+    font-size: 16px;
+}
+
+.modal-body {
+    font-size: 14px;
+    height: 50vh;
+}
+
+.modal-dialog {
+    overflow-y: initial !important
+}
+
+.modal-body {
+    overflow-y: auto !important;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.leaflet-container .leaflet-control-mouseposition {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #bbb;
+    padding: 0 5px;
+    margin: 0;
+    color: #333;
+    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.maintenance-banner {
+    background-color: #f44336; /* Red background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add some padding */
+}

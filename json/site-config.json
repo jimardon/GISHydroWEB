@@ -1,0 +1,25 @@
+{
+    "appServer": {
+        "serverURL": "https://maps.roads.maryland.gov/arcgis/rest/services/GISHydro/GISHydro/GPServer/"
+    },
+    "appConfig": {
+        "DataSelectionURL": "DataSelection",
+        "DelCheckURL": "DelCheck",
+        "BasinOutputsURL": "BasinOutputs",
+        "FlowpathsURL": "Flowpaths",
+        "OutletsURL": "Outlets",
+        "SubshedsURL": "Subsheds",
+        "SetTOCURL": "SetTOC",
+        "TransectURL": "Transect",
+        "ReservoirURL": "Reservoir",
+        "PrecipitationDepthURL": "PrecipitationDepths",
+        "TR20ControlURL": "TR20Control",
+        "DesignStormURL": "DesignStorm",
+        "LoadLayerURL": "LoadLayer",
+        "FRRECalculatorURL": "FRRECalculator",
+        "FRREBasinURL": "FRREBasin",
+        "UserStreamsURL": "UserStreams",
+        "DownloadLayerURL": "DownloadLayer"
+    }
+}
+
